@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: springcloudconfigserver
+  cloud:
+    config:
+      server:
+        git: 
+          uri: https://github.com/chenpeihai1026/springcloudconfigserver.git
+          search-paths: config-repo
+          username: chenpeihai1026
+          password: Peihai!!2005
+             
