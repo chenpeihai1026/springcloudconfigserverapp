@@ -2,7 +2,7 @@ server:
   port: 8070
 spring:
   application:
-    name: springcloudconfigserver
+    name: springconfigserver
   cloud:
     config:
       server:
@@ -10,4 +10,8 @@ spring:
           uri: https://github.com/chenpeihai1026/springcloudconfigserver.git
           search-paths: config-repo
           username: chenpeihai1026
-          password: Peihai!!2005       
+          password: Peihai!!2005
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/       
