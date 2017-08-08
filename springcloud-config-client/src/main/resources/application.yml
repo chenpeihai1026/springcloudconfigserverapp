@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: springconfigclient
+  rabbitmq: 
+    host: localhost
+    port: 5672
+    username: admin
+    password: nimda
+server: 
+  port: 8003
+
+management: 
+  security:
+    enabled: false

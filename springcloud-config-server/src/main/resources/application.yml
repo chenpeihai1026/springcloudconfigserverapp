@@ -1,0 +1,25 @@
+server:
+  port: 8070
+spring:
+  application:
+    name: springconfigserver
+  cloud:
+    config:
+      server:
+        git: 
+          uri: https://github.com/chenpeihai1026/springcloudconfigserver.git
+          search-paths: config-repo
+          username: chenpeihai1026
+          password: Peihai!!2005
+  rabbitmq: 
+    host: localhost
+    port: 5672
+    username: admin
+    password: nimda
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management: 
+  security:
+    enabled: false       

@@ -1,0 +1,17 @@
+spring: 
+  cloud:
+    config:
+      name: springcloudconfigserver
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: springconfigserver
+    bus:
+      trace:
+        enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+   
