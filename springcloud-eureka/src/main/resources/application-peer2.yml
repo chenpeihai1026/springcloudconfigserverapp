@@ -1,12 +1,18 @@
+spring:
+  application:
+    name: springcloud-eureka
 server:
-  port: 8761
-
+  port: 8763
 eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+    service-url:
+      defaultZone: http://peer1:8762/eureka
   server:
     waitTimeInMsWhenSyncEmpty: 0
     enable-self-preservation: false # 设为false，关闭自我保护
     eviction-interval-timer-in-ms: 60000 # 清理间隔（单位毫秒，默认是60*1000）
+  instance: 
+    hostname: peer2 #host文件中配置127.0.0.1 peer2 127.0.0.1 peer1
   
